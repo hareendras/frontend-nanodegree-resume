@@ -13,7 +13,8 @@ var bio = {
 var formattedName = HTMLheaderName.replace("%data%",bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%",bio.role);
 var formattedContact = HTMLcontactGeneric.replace("%contact%",bio.contact);
-
+var formattedwelcomeMessage = HTMLWelcomeMsg.replace("%data%",bio.welcomeMessage);
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
-$("#header").append(formattedContact);
+$("#header").append(formattedwelcomeMessage);
+$("#topContacts").append(formattedContact);
